@@ -4,7 +4,7 @@ package exercise1;
  * A class that fills a hand of 7 cards with random Card Objects and then asks the user to pick a card.
  * It then searches the array of cards for the match to the user's card. 
  * To be used as starting code in Exercise
- *
+ * this is the branch code
  * @author dancye
  * @author Paul Bonenfant Jan 25, 2022 
  * modifier fnokom
@@ -17,7 +17,8 @@ public class CardTrick {
 
         for (int i = 0; i < hand.length; i++) {
             Card card = new Card();
-            card.setValue((int)(1 + Math.random()*13));
+            card.setValue((int)(1 + Math.random()*14));
+            card.setSuit(Card.SUITS((int)(Math.random()*4)));
             // 
             //card.setSuit(Card.SUITS[insert call to random number between 0-3 here])
             // Hint: You can use Random -> random.nextInt(n) to get a random number between 0 and n-1 (inclusive)
